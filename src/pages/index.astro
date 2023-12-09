@@ -7,7 +7,7 @@ import Card from '../components/Card.astro';
 	<main>
 		<h1><span class="text-gradient">DevDocky Website</span></h1>
 		<p class="instructions">
-			Welcome to <code>DevDocky</code> project website. We create Websites and Applications which 
+			Welcome to <code>DevDocky</code> project website. We create Websites and Applications which
 			empower your business. This is our Portfolio, get around and take a look to the projects done!
 		</p>
 		<ul role="list" class="link-card-grid">
@@ -59,7 +59,7 @@ import Card from '../components/Card.astro';
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
-		margin-bottom: 1em;
+		/* margin-bottom: 1em; */
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
@@ -70,6 +70,7 @@ import Card from '../components/Card.astro';
 	}
 	.instructions {
 		margin-bottom: 2rem;
+		margin-top: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
 		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
 		padding: 1.5rem;
@@ -89,7 +90,8 @@ import Card from '../components/Card.astro';
 	.link-card-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
+		gap: 1rem;
+		/* gap: 2rem; */
 		padding: 0;
 	}
 </style>
